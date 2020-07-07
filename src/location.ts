@@ -13,10 +13,10 @@ export const location = async ({ cep, query }: { cep: string, query: Query }) =>
   }
 }
 
-const getQuery = async ({ uf, cidade, rua }: Query) => {
+const getQuery = async ({ uf, city, street }: Query) => {
   try {
-    if (!uf || !cidade || !rua) throw new Error('Parâmetros inválidos!');
-    return await http<Location[]>(`${uf}/${cidade}/${rua}`)
+    if (!uf || !city || !street) throw new Error('Parâmetros inválidos!');
+    return await http<Location[]>(`${uf}/${city}/${street}`)
   } catch (error) {
     return { msg: error.message }
   }

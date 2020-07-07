@@ -1,5 +1,5 @@
 export interface Query {
   uf: string;
-  cidade: string;
-  rua: string;
+  city: string;
+  street: string;
 }
