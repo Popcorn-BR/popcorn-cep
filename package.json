@@ -1,7 +1,7 @@
 {
   "name": "popcorn-cep",
   "version": "0.1.0",
-  "description": "",
+  "description": "library to abstract the zip code API from Brazil",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "jsnext:main": "build/index.es.js",
