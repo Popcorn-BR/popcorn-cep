@@ -13,30 +13,49 @@ $ npm install popcorn-cep --save
 
 ```js
 // to import a specific method
-import { popcorn-cep } from 'popcorn-cep';
+import { local } from 'popcorn-cep';
 // using  method
-popcorn-cep();
+local(cep);
 ```
 
 ## Methods
 
 > Follow the methods that the library provides.
 
-### popcorn-cep(value)
+### local(cep)
 
-> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure illo.
+> Method that fetches information for a street through zip code.
 
 **Arguments**
 
 | Argument | Type    |
 |----------|---------|
-|`value`   |*number* |
+|`cep`     |*string* |
 
 
 **Example**
 
 ```js
-const data = popcorn-cep();
+const data = local();
+```
+
+### locais(uf, cidade, rua)
+
+> Method that searches for information about a street through the State, City and part of the street name.
+
+**Arguments**
+
+| Argument | Type    |
+|----------|---------|
+|`uf`      |*string* |
+|`cidade`  |*string* |
+|`rua`     |*string* |
+
+
+**Example**
+
+```js
+const data = locais(uf, cidade, rua);
 ```
 
 ## Contributing

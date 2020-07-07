@@ -1,4 +1,4 @@
-export interface Local {
+export interface Location {
   cep: string;
   logradouro: string;
   complemento: string;
